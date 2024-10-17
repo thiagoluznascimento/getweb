@@ -6,6 +6,7 @@ import './styles.css';
 function Companies() {
   return (
     <div className="companies-container">
+      <h2>Parceiros</h2>
         <Marquee speed={35} gradient={false} direction="rigth">
         {companies.map((companie, index) => (
             <div key={index} className="company-item">

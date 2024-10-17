@@ -7,6 +7,13 @@
 }
 .nav-brand{
     color: #62abd9 !important;
+    /* opacity: 0 !important; */
+}
+.custom__brand-img {
+    width: 30px;
+    height: 30px;
+    transform: rotate(180deg);
+    opacity: 0;
 }
 .nav-link {
     color: #62abd9 !important;
@@ -18,7 +25,26 @@
     color: #010b40;
     border-radius: 20px;
 }
-.nav-dropdown-item:hover {
+.nav-dropdown-item {
     background-color: #010b40 !important;
-    color: white !important; /* Cor do texto ao passar o mouse */
+    color: #62abd9 !important; /* Cor do texto ao passar o mouse */
+}
+.custom-buscar {
+    background-color: rgba(255, 255, 255, 0.2) !important; /* Transparência no input */
+    border: 1px solid rgba(255, 255, 255, 0.5) !important; /* Borda semi-transparente */
+  }
+.custom-buscar::placeholder {
+    color: #62abd9 !important; /* Cor do placeholder */
+}
+.custom-buscar + .btn {
+  margin-left: 10px; /* Espaçamento entre o input e o botão */
+  margin-right: 20px; /* Espaçamento entre o botão e redes */
+}
+.custom-btn {
+    background-color: #010b40 !important;
+    color: #62abd9 !important;
+}
+.custom-btn:hover {
+    background-color: #010b40 !important;
+    color: #6070c266 !important;
 }

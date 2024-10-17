@@ -1,16 +1,39 @@
 import React, { useRef } from "react";
+import { useLayoutEffect } from 'react';
 import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, Sphere } from "@react-three/drei";
 import { pointsInner, pointsOuter } from "./utils";
+import { gsap } from 'gsap';
+import logoImage from "../../assets/images/logo.png";
+import "./styles.css"
+
 // import Header from "../Header";
 
 const ParticleRing = () => {
+  useLayoutEffect(() =>{
+    gsap.to(".conteudo-img",{
+      opacity: 1,
+      rotate: "0deg",
+      duration: 3
+    })
+    gsap.to(".conteudo-h1",{
+      x: 0,
+      opacity: 1,
+      duration: 3
+    })
+
+    return () => {
+      gsap.killTweensOf(".custom__brand-img");
+    };
+  }, []);
+
   return (
     <div className="relative">
         
       <Canvas
         camera={{
-          position: [10, -7.5, -5],
+          position: [0, 0, 25], // Centraliza a câmera diretamente à frente do centro da cena
+          fov: 60,
         }}
         style={{ height: "100vh" }}
         className="bg-slate-900"
@@ -21,9 +44,11 @@ const ParticleRing = () => {
         <PointCircle />
       </Canvas>
 
-      {/* <h1 className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-slate-200 font-medium text-2xl md:text-5xl pointer-events-none">
-        GET WEB
-      </h1> */}
+        {/* Conteúdo sobreposto no meio */}
+      <div className="conteudo-sobreposto">
+        <img src={logoImage} alt="Logo" className="conteudo-img" />
+        <h1 className="conteudo-h1">GET WEB</h1>
+      </div>
     </div>
   );
 };
@@ -57,7 +82,7 @@ const Point = ({ position, color }) => {
         emissiveIntensity={0.5}
         roughness={0.5}
         color={color}
-      />
+        />
     </Sphere>
   );
 };
