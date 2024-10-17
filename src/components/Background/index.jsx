@@ -7,7 +7,6 @@ import { gsap } from 'gsap';
 import logoImage from "../../assets/images/logo.png";
 import "./styles.css"
 
-// import Header from "../Header";
 
 const ParticleRing = () => {
   useLayoutEffect(() =>{
@@ -32,7 +31,7 @@ const ParticleRing = () => {
         
       <Canvas
         camera={{
-          position: [0, 0, 25], // Centraliza a câmera diretamente à frente do centro da cena
+          position: [0, 0, 25], // Centraliza câmera diretamente à frente do centro da cena
           fov: 60,
         }}
         style={{ height: "100vh" }}

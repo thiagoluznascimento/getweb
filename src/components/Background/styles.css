@@ -1,5 +1,3 @@
-/* absolute inset-0 flex flex-col items-center justify-center z-10 pointer-events-none */
-
 .conteudo-sobreposto {
     position: absolute;
     top: 50%;
@@ -10,18 +8,18 @@
     align-items: center;
     justify-content: center;
     z-index: 10;
-    pointer-events: none; /* Isso garante que o usuário possa interagir com o Canvas, mas não com o conteúdo sobreposto */
+    pointer-events: none; /* Para garantir que o usuário possa interagir com o Canvas, mas não com o conteúdo sobreposto */
 }
 
 .conteudo-img {
-    width: 10rem; /* Ajuste conforme necessário */
+    width: 10rem;
     height: 10rem;
     transform: rotate(180deg);
     opacity: 0;
 }
 
 h1 {
-    color: #62abd9 !important; /* Adicione o estilo de cor aqui */
+    color: #62abd9 !important;
     opacity: 0;
     transform: translateX(-800px);
 

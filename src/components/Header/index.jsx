@@ -7,7 +7,7 @@ import { gsap } from 'gsap';
 import logoImage from "../../assets/images/logo.png";
 import "./style.css";
 
-// width="30" height="30" className="d-inline-block align-top"
+
 function Header() {
     useLayoutEffect(() =>{
         gsap.to(".custom__brand-img",{
