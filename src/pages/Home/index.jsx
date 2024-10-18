@@ -2,6 +2,7 @@ import React from 'react'
 import ParticleRing from '../../components/Background'
 import Header from '../../components/Header'
 import Companies from '../../components/Marquee'
+import Footer from '../../components/Footer'
 
 function Home() {
   return (
@@ -9,6 +10,7 @@ function Home() {
     <Header />
     <ParticleRing />
     <Companies />
+    <Footer />
     </>
   )
 }
