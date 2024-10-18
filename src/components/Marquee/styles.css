@@ -1,0 +1,19 @@
+/* CSS Companias */
+.companies-container {
+    padding: 50px;
+    background-color: #010b40;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.company-item {
+    margin: 0 20px;
+}
+
+.company-logo {
+    height: 100px;
+    object-fit: contain;
+}
+h2 {
+    color: #62abd9 !important;
+}
