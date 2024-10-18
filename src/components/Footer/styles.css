@@ -12,10 +12,10 @@ h5 {
     color: #1771bf;
 }
 a {
-    text-decoration: none; /* Remove o sublinhado dos links */
-    color: #1771bf;
+    text-decoration: none !important; /* Remove o sublinhado dos links */
+    color: #1771bf !important;
 }
 
 a:hover {
-    text-decoration: underline; /* Adicionando sublinhado ao passar o mouse */
+    text-decoration: underline !important; /* Adicionando sublinhado ao passar o mouse */
 }
