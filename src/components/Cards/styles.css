@@ -1,0 +1,51 @@
+:root {
+    --color-gray: lightgray; /* Cor padrão de fundo */
+    --color-green: green; /* Cor verde */
+    --color-purple: purple; /* Cor roxa */
+    --color-red: red; /* Cor vermelha */
+    --color-white: white; /* Cor do ícone */
+}
+
+.avatar {
+    border-radius: 50%;
+}
+
+.icon__circle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px; /* Ajuste o tamanho do círculo */
+    height: 48px;
+    border-radius: 50%;
+    background-color: var(--color-gray); /* Usando a variável de cor padrão */
+}
+
+.icon__circle--green {
+    background-color: var(--color-green); /* Usando a variável de cor verde */
+}
+
+.icon__circle--purple {
+    background-color: var(--color-purple); /* Usando a variável de cor roxa */
+}
+
+.icon__circle--red {
+    background-color: var(--color-red); /* Usando a variável de cor vermelha */
+}
+
+svg.feather {
+    color: var(--color-white); /* Usando a variável de cor do ícone */
+}
+
+.card-custom {
+    border: none !important;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: #d8e4ee !important;
+    margin-bottom: 0.5rem !important;
+    box-shadow: 0px 0px 60px 20px rgba(255, 255, 255, 0.105);
+}
+
+.card-text {
+    text-align: left;
+}

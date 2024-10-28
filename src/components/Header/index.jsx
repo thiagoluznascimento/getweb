@@ -32,16 +32,16 @@ function Header() {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto" >
                         <Nav.Link as={Link} to="/" className="nav-link">Início</Nav.Link>
-                        <Nav.Link as={Link} to="/" className="nav-link">Produtos</Nav.Link>
+                        <Nav.Link as={Link} to="/" className="nav-link">Serviços</Nav.Link>
                         <NavDropdown title="Mais" id="basic-nav-dropdown">
-                            <NavDropdown.Item as={Link} to="/" className="nav-dropdown-item">Fique por dentro</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/" className="nav-dropdown-item">Solicite um orçamento</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="/" className="nav-dropdown-item">Parceiros</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="/" className="nav-dropdown-item">Quem Somos</NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item as={Link} to="/" className="nav-dropdown-item">Contato</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
-                    <Form className="d-flex">
+                    {/* <Form className="d-flex">
                         <Form.Control
                         type="search"
                         placeholder="Buscar"
@@ -49,7 +49,7 @@ function Header() {
                         aria-label="Search"
                         />
                         <Button className='custom-btn'>Buscar</Button>
-                    </Form>
+                    </Form> */}
                     <div>
                         <Link to="/" className="text-white me-4">
                             <BsWhatsapp />

@@ -18,11 +18,11 @@ const ParticleRing = () => {
     gsap.to(".conteudo-h1",{
       x: 0,
       opacity: 1,
-      duration: 3
+      duration: 6
     })
 
     return () => {
-      gsap.killTweensOf(".custom__brand-img");
+      gsap.killTweensOf(".conteudo-img");
     };
   }, []);
 

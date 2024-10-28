@@ -1,0 +1,21 @@
+h5 {
+    color: #62abd9 !important;
+    margin-bottom: 15px !important;
+}
+.custom-hr {
+    border: none;
+    height: 1px;
+    background-color: #62abd9;
+    margin: 40px !important;
+}
+.custom-p {
+    color: #1771bf;
+}
+a {
+    text-decoration: none !important; /* Remove o sublinhado dos links */
+    color: #1771bf !important;
+}
+
+a:hover {
+    text-decoration: underline !important; /* Adicionando sublinhado ao passar o mouse */
+}

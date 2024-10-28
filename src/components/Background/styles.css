@@ -18,9 +18,8 @@
     opacity: 0;
 }
 
-h1 {
+.conteudo-h1 {
     color: #62abd9 !important;
     opacity: 0;
-    transform: translateX(-800px);
-
+    transform: translateX(-2);
 }
