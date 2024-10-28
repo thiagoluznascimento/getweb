@@ -6,7 +6,8 @@ import './styles.css';
 function Companies() {
   return (
     <div className="companies-container">
-      <h2>Parceiros</h2>
+      <h2>Conheça nossos clientes</h2>
+      <p className='custom-p'>Empresas que confiam na equipe GetWeb</p>
         <Marquee speed={35} gradient={false} direction="rigth">
         {companies.map((companie, index) => (
             <div key={index} className="company-item">
